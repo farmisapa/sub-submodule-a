@@ -1,4 +1,6 @@
-﻿namespace ModuleALibrary;
+﻿using SubModule3;
+
+namespace ModuleALibrary;
 
 public interface IModuleAInterface
 {
@@ -9,7 +11,8 @@ public class ModuleAClass1: IModuleAInterface
 {
     public string GetData()
     {
-        return "Data from Module A Class 1";
+        var c = new Class3();
+        return "Data from Module A Class 1" + Environment.NewLine + c.GetMessage();
     }
 
 }

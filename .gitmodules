@@ -1,0 +1,3 @@
+[submodule "submodule-c"]
+	path = submodule-c
+	url = https://github.com/farmisapa/sub-module-c.git
